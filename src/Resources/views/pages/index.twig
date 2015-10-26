@@ -4,27 +4,27 @@
 {% block content %}
     <div class="index__container">
         <picture>
-            <source srcset="/images/bg-400.jpg" media="(max-width: 400px)">
+            {#<source srcset="/images/bg-400.jpg" media="(max-width: 400px)">
             <source srcset="/images/bg-767.jpg" media="(max-width: 767px)">
             <source srcset="/images/bg-1024.jpg" media="(max-width: 1024px)">
-            <source srcset="/images/bg-1440.jpg" media="(max-width: 1440px)">
+            <source srcset="/images/bg-1440.jpg" media="(max-width: 1440px)">#}
             <img class="index__image" src="/images/bg.jpg">
         </picture>
 
         <div class="index__caption">
-            {% include 'component/svg_icon.twig' with {
+            {#{% include 'component/svg_icon.twig' with {
                 icon: 'logo',
                 svgClass: 'index__logo'
-            } %}
+            } %}#}
             <h1 class="index__title"></h1>
             <form class="index__subscribe">
-                <p></p>
+                <p class="index__subscribe-legend">Entérate el primero de su lanzamiento</p>
                 <div class="index__subscribe-fields">
-                    <input class="index__email" type="email" placeholder="Your email"/>
-                    <input class="index__submit" type="submit" value="Submit"/>
+                    <input class="index__email" type="email" placeholder="Tu email"/>
+                    <input class="index__submit" type="submit" value="Apuntarme!"/>
                 </div>
             </form>
-            <img class="index__loading" src="/svg/spin.svg"/>
+            <img class="index__loading" src="/images/spin.svg"/>
             {% include 'component/svg_icon.twig' with {
                 icon: 'success',
                 svgClass: 'index__success'
