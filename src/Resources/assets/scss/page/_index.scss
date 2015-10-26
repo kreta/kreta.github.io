@@ -1,12 +1,10 @@
 .index__container {
-  background: $color-php;
   position: relative;
 }
 
 .index__image {
   height: 100vh;
   object-fit: cover;
-  opacity: .3;
   width: 100%;
 }
 
@@ -34,6 +32,12 @@
 
 .index__subscribe {
   color: $white;
+  margin: auto;
+  max-width: 540px;
+}
+
+.index__subscribe-legend {
+  text-align: left;
 }
 
 .index__subscribe-fields {
@@ -43,6 +47,7 @@
 
 .index__email {
   border: 0;
+  border-radius: 3px 0 0 3px;
   font-family: $body-font-family;
   font-size: 16px;
   height: 40px;
@@ -56,18 +61,19 @@
 
 .index__submit {
   -webkit-appearance: none;
-  background: $color-php;
+  background: $green;
   border: 0;
+  border-radius: 0 3px 3px 0;
   color: $white;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 17px;
   height: 40px;
   padding: 0 30px;
   position: relative;
   transition: background .3s;
 
   &:hover {
-    background: lighten($color-php, 10);
+    background: lighten($green, 10);
   }
 }
 
