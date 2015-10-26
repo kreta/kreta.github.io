@@ -23,11 +23,13 @@ $controller = new Controller($twig);
 
 $request = Request::createFromGlobals();
 
-if($request->isXmlHttpRequest() && $request->getPathInfo() === '/subscribe') {
+if ($request->isXmlHttpRequest() && $request->getPathInfo() === '/subscribe') {
     $success = $controller->subscribeAction($request);
     $response = new Response('', $success ? 200 : 400);
-} else {
+} elseif ($request->getPathInfo() === '/') {
     $response = new Response($controller->indexAction());
+} else {
+    $response = new Response($controller->notFoundAction(), 404);
 }
 
 $response->send();

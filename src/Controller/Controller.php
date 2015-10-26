@@ -50,6 +50,23 @@ final class Controller
         return $this->twig->render('pages/index.twig');
     }
 
+    /**
+     * Not found action.
+     *
+     * @return string
+     */
+    public function notFoundAction()
+    {
+        return $this->twig->render('pages/404.twig');
+    }
+
+    /**
+     * Mailchimp subscribe action.
+     *
+     * @param Request $request The request
+     *
+     * @return bool
+     */
     public function subscribeAction(Request $request)
     {
         try {
