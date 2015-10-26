@@ -10,8 +10,8 @@
 # Setup Server
 ############################################
 
-server "php.eus", user: "php", roles: %w{web}
-set :deploy_to, "/home/php/public_html"
+server "kreta.io", user: "kreta", roles: %w{web}
+set :deploy_to, "/var/www/kreta.io"
 set :env,  "prod"
 
 ############################################
