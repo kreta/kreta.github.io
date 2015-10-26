@@ -1,13 +1,13 @@
 {% extends 'layout/base.twig' %}
 
-{% block title %}{% endblock %}
+{% block title %}Kreta.io - Modern project management software{% endblock %}
 {% block content %}
     <div class="index__container">
         <picture>
-            {#<source srcset="/images/bg-400.jpg" media="(max-width: 400px)">
+            <source srcset="/images/bg-400.jpg" media="(max-width: 400px)">
             <source srcset="/images/bg-767.jpg" media="(max-width: 767px)">
             <source srcset="/images/bg-1024.jpg" media="(max-width: 1024px)">
-            <source srcset="/images/bg-1440.jpg" media="(max-width: 1440px)">#}
+            <source srcset="/images/bg-1440.jpg" media="(max-width: 1440px)">
             <img class="index__image" src="/images/bg.jpg">
         </picture>
 
@@ -16,9 +16,11 @@
                 icon: 'logo',
                 svgClass: 'index__logo'
             } %}#}
-            <h1 class="index__title"></h1>
+            <h1 class="index__title">Chanante ipsum dolor sit amet, eiusmod ahí va qué  moreno ut
+                exercitation fresquete ut cosica veniam. Droja ex saepe magna, labore mangurrián ea elit nostrud dolore.
+                Ut mamellas eveniet cacahué dolore.</h1>
+            <p class="index__subtitle">Entérate el primero de su lanzamiento</p>
             <form class="index__subscribe">
-                <p class="index__subscribe-legend">Entérate el primero de su lanzamiento</p>
                 <div class="index__subscribe-fields">
                     <input class="index__email" type="email" placeholder="Tu email"/>
                     <input class="index__submit" type="submit" value="Apuntarme!"/>
@@ -34,5 +36,20 @@
                 svgClass: 'index__error'
             } %}
         </div>
+    </div>
+    <div class="index__follow">
+        <span>Síguenos:</span>
+        <a class="index__follow-link" href="http://twitter.com/kreta_io">
+            {% include 'component/svg_icon.twig' with {
+                icon: 'twitter',
+                svgClass: 'index__follow-icon'
+            } %}
+        </a>
+        <a class="index__follow-link" href="http://github.com/kreta">
+            {% include 'component/svg_icon.twig' with {
+                icon: 'github',
+                svgClass: 'index__follow-icon'
+            } %}
+        </a>
     </div>
 {% endblock %}

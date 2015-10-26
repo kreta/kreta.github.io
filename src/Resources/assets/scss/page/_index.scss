@@ -10,6 +10,7 @@
 
 .index__caption {
   left: 50%;
+  max-width: 540px;
   position: absolute;
   text-align: center;
   top: 50%;
@@ -26,17 +27,15 @@
 
 .index__title {
   color: $white;
-  font-size: 25px;
+  font-size: 18px;
+  margin-bottom: 60px;
+  text-align: center;
   text-transform: none;
 }
 
-.index__subscribe {
+.index__subtitle {
   color: $white;
-  margin: auto;
-  max-width: 540px;
-}
-
-.index__subscribe-legend {
+  padding: 0 10px;
   text-align: left;
 }
 
@@ -52,7 +51,7 @@
   font-size: 16px;
   height: 40px;
   padding: 0 10px;
-  width: 400px;
+  width: 100%;
 
   &:focus {
     outline: 0;
@@ -96,4 +95,24 @@
   margin: auto;
 }
 
+.index__follow {
+  align-items: center;
+  bottom: 20px;
+  color: $white;
+  display: flex;
+  position: fixed;
+  right: 50px;
+}
+
+.index__follow-icon {
+  fill: rgba($white, .8);
+  height: 35px;
+  margin-left: 10px;
+  transition: fill .3s;
+  width: 35px;
+
+  &:hover {
+    fill: $white;
+  }
+}
 
