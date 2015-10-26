@@ -1,0 +1,93 @@
+.index__container {
+  background: $color-php;
+  position: relative;
+}
+
+.index__image {
+  height: 100vh;
+  object-fit: cover;
+  opacity: .3;
+  width: 100%;
+}
+
+.index__caption {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.index__logo {
+  fill: $white;
+  height: 160px;
+  margin-bottom: -37px;
+  width: 300px;
+}
+
+.index__title {
+  color: $white;
+  font-size: 25px;
+  text-transform: none;
+}
+
+.index__subscribe {
+  color: $white;
+}
+
+.index__subscribe-fields {
+  display: flex;
+  justify-content: center;
+}
+
+.index__email {
+  border: 0;
+  font-family: $body-font-family;
+  font-size: 16px;
+  height: 40px;
+  padding: 0 10px;
+  width: 400px;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.index__submit {
+  -webkit-appearance: none;
+  background: $color-php;
+  border: 0;
+  color: $white;
+  cursor: pointer;
+  font-size: 18px;
+  height: 40px;
+  padding: 0 30px;
+  position: relative;
+  transition: background .3s;
+
+  &:hover {
+    background: lighten($color-php, 10);
+  }
+}
+
+.index__subscribe--hidden {
+  display: none;
+}
+
+.index__loading,
+.index__success,
+.index__error {
+  display: none;
+}
+
+.index__loading--show,
+.index__success--show,
+.index__error--show {
+  display: block;
+  fill: $white;
+  height: 40px;
+  margin: auto;
+}
+
+

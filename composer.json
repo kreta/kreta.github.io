@@ -1,0 +1,60 @@
+{
+    "name": "kreta/kreta.io",
+    "description": "The website of Kreta",
+    "keywords": [
+        "kreta",
+        "kreta.io",
+        "website"
+    ],
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Beñat Espiña Diaz",
+            "email": "benatespina@gmail.com",
+            "homepage": "http://benatespina.com"
+        },
+        {
+            "name": "Gorka Laucirica Ibarra",
+            "email": "gorka.lauzirika@gmail.com",
+            "homepage": "http://gorkalaucirica.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "symfony/http-foundation": "^2.7",
+        "twig/twig": "^1.22",
+        "mailchimp/mailchimp": "^2.0"
+    },
+    "require-dev": {
+        "lin3s/cs": "^0.3.2"
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "LIN3S\\CS\\Composer\\Hooks::buildDistFile",
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "LIN3S\\CS\\Composer\\Hooks::addHooks",
+            "LIN3S\\CS\\Composer\\Hooks::addFiles"
+        ],
+        "post-install-cmd": [
+            "LIN3S\\CS\\Composer\\Hooks::buildDistFile",
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "LIN3S\\CS\\Composer\\Hooks::addHooks",
+            "LIN3S\\CS\\Composer\\Hooks::addFiles"
+        ]
+    },
+    "config": {
+        "bin-dir": "bin/"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kreta\\": "src/"
+        }
+    },
+    "extra": {
+        "incenteev-parameters": {
+            "file": ".lin3s_cs.yml",
+            "dist-file": ".lin3s_cs.yml.dist"
+        }
+    }
+}
