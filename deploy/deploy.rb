@@ -11,7 +11,7 @@
 ############################################
 
 set :application, "kreta.io"
-set :repo_url, "git@github.com:kreta/kreta.io.git"
+set :repo_url, "https://github.com/kreta/kreta.io.git"
 set :scm, :git
 
 ############################################
@@ -31,7 +31,7 @@ set :keep_releases, 3
 # Linked files and directories (symlinks)
 ############################################
 
-set :linked_files, %w{web/robots.txt web/.htaccess config.yml}
+set :linked_files, %w{web/robots.txt config.yml}
 set :linked_dirs, %w{cache}
 
 set :theme_path, 'src'

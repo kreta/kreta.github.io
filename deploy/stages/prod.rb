@@ -11,7 +11,7 @@
 ############################################
 
 server "kreta.io", user: "kreta", roles: %w{web}
-set :deploy_to, "/var/www/kreta.io"
+set :deploy_to, "/var/www/kreta-io"
 set :env,  "prod"
 
 ############################################
