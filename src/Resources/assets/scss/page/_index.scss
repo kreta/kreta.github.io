@@ -22,7 +22,8 @@
 .index__logo {
   fill: $white;
   height: 90px;
-  width: 314px;
+  max-width: 314px;
+  width: 100%;
 }
 
 .index__title {
