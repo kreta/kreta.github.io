@@ -1,0 +1,35 @@
+{
+  "name": "kreta.io",
+  "description": "The website of Kreta",
+  "keywords": [
+    "kreta",
+    "kreta.io",
+    "website"
+  ],
+  "homepage": "http://kreta.io",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kreta/kreta.io.git"
+  },
+  "authors": [
+    {
+      "name": "Beñat Espiña Diaz",
+      "email": "benatespina@gmail.com",
+      "homepage": "http://benatespina.com"
+    },
+    {
+      "name": "Gorka Laucirica Ibarra",
+      "email": "gorka.lauzirika@gmail.com",
+      "homepage": "http://gorkalaucirica.net"
+    }
+  ],
+  "devDependencies": {
+    "gulp": "^3.9",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.0",
+    "gulp-svg-sprite": "^1.2",
+    "postcss-cssnext": "^2.8.0"
+  }
+}

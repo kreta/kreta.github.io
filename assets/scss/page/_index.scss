@@ -1,0 +1,66 @@
+// This file is part of the Kreta package.
+//
+// (c) Beñat Espiña <benatespina@gmail.com>
+// (c) Gorka Laucirica <gorka.lauzirika@gmail.com>
+//
+// For the full copyright and license information, please view the LICENSE
+// file that was distributed with this source code.
+
+$main-color: #fff;
+
+.index__container {
+  position: relative;
+}
+
+.index__image {
+  display: flex;
+  height: 100vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+.index__caption {
+  left: 50%;
+  max-width: 540px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.index__logo {
+  fill: $main-color;
+  height: 90px;
+  max-width: 314px;
+  width: 100%;
+}
+
+.index__title {
+  color: $main-color;
+  font-size: 20px;
+  text-align: center;
+  text-transform: none;
+}
+
+.index__follow {
+  align-items: center;
+  bottom: 20px;
+  color: $main-color;
+  display: flex;
+  position: fixed;
+  right: 50px;
+}
+
+.index__follow-icon {
+  fill: rgba($main-color, .8);
+  height: 35px;
+  margin-left: 10px;
+  transition: fill .3s;
+  width: 35px;
+
+  &:hover {
+    fill: $main-color;
+  }
+}
+
